@@ -243,7 +243,7 @@ function removeTransaction(id) {
                                 </div>
                                 <div class="flex items-center justify-between mt-2">
                                     <p class="px-2 py-1 rounded text-xs text-white w-fit bg-indigo-400">{{ tx.category
-                                        }}</p>
+                                    }}</p>
                                     <button @click="removeTransaction(tx.id)"
                                         class="hover:text-red-400 active:text-red-400">
                                         <Icon icon="lucide:trash-2" class="w-5 h-5" />
@@ -287,7 +287,7 @@ function removeTransaction(id) {
                                 </div>
                                 <div class="flex items-center justify-between mt-2">
                                     <p class="px-2 py-1 rounded text-xs text-white w-fit bg-indigo-400">{{ tx.category
-                                    }}</p>
+                                        }}</p>
                                     <button @click="removeTransaction(tx.id)"
                                         class="hover:text-red-400 active:text-red-400">
                                         <Icon icon="lucide:trash-2" class="w-5 h-5" />
