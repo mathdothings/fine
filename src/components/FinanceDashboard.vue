@@ -242,8 +242,8 @@ function removeTransaction(id) {
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-between mt-2">
-                                    <p class="px-2 py-1 rounded text-xs text-white w-fit bg-orange-400">{{ tx.category
-                                    }}</p>
+                                    <p class="px-2 py-1 rounded text-xs text-white w-fit bg-indigo-400">{{ tx.category
+                                        }}</p>
                                     <button @click="removeTransaction(tx.id)"
                                         class="hover:text-red-400 active:text-red-400">
                                         <Icon icon="lucide:trash-2" class="w-5 h-5" />
@@ -251,6 +251,10 @@ function removeTransaction(id) {
                                 </div>
                             </li>
                         </ul>
+                        <p
+                            class="mt-3 bg-red-50 border border-red-100 text-red-500 px-3 py-2 rounded text-sm font-medium">
+                            {{formatBRL(expenses.reduce((s, t) => s + Number(t.amount), 0))}}
+                        </p>
                     </div>
                     <!-- Incomes Column -->
                     <div class="bg-white p-4 rounded-lg shadow-sm">
@@ -282,8 +286,8 @@ function removeTransaction(id) {
                                     </div>
                                 </div>
                                 <div class="flex items-center justify-between mt-2">
-                                    <p class="px-2 py-1 rounded text-xs text-white w-fit bg-orange-400">{{ tx.category
-                                        }}</p>
+                                    <p class="px-2 py-1 rounded text-xs text-white w-fit bg-indigo-400">{{ tx.category
+                                    }}</p>
                                     <button @click="removeTransaction(tx.id)"
                                         class="hover:text-red-400 active:text-red-400">
                                         <Icon icon="lucide:trash-2" class="w-5 h-5" />
@@ -291,6 +295,10 @@ function removeTransaction(id) {
                                 </div>
                             </li>
                         </ul>
+                        <p
+                            class="mt-3 bg-green-50 border border-green-100 text-green-500 px-3 py-2 rounded text-sm font-medium">
+                            {{formatBRL(incomes.reduce((s, t) => s + Number(t.amount), 0))}}
+                        </p>
                     </div>
                 </div>
             </div>
