@@ -265,7 +265,7 @@ function removeTransaction(id) {
                         </div>
                         <ul class="flex flex-col gap-2 overflow-y-auto min-h-100 max-h-100">
                             <li v-for="tx in incomes" :key="tx.id"
-                                class="p-3 bg-green-50 rounded text-sm border border-green-200">
+                                class="p-3 bg-green-50 rounded text-sm border border-green-100">
                                 <div class="flex items-center justify-between">
                                     <div>
                                         <div>
